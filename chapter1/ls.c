@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <dirent.h>
 #include <jmorecfg.h>
+#include <errno.h>
 
 boolean validateArguments(int argc)
 {
@@ -18,7 +19,9 @@ boolean printDirectoryItems(char *path)
 
     dp = opendir(path);
     if (dp == NULL) {
-        printf("Can't open directory %s\n", path);
+        char msg[80];
+        sprintf(msg, "Can't open directory '%s'", path);
+        perror(msg);
         return FALSE;
     }
 
