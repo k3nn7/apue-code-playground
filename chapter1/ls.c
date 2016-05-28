@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <dirent.h>
 #include <jmorecfg.h>
-#include <errno.h>
 
 boolean validateArguments(int argc)
 {
     if (argc != 2) {
-        printf("Usage: ls directory\n");
+        printf("Usage: ls <dirname>\n");
         return FALSE;
     }
     return TRUE;
