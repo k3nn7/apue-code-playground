@@ -16,3 +16,9 @@ Usage:
 Unbuffered I/O example. Copies `STDIN` to `STDOUT`.
 
 `cc ls.c && ./a.out < input > output`
+
+### `stdio_copy.c`
+
+Copies `STDIN` to `STDOUT`. Implementation based on `stdio.h` library.
+
+`cc ls.c && ./a.out < input > output`
