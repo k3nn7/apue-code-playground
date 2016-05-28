@@ -22,3 +22,10 @@ Unbuffered I/O example. Copies `STDIN` to `STDOUT`.
 Copies `STDIN` to `STDOUT`. Implementation based on `stdio.h` library.
 
 `cc ls.c && ./a.out < input > output`
+
+### `user.c`
+
+Obtains current user ID and group ID with `getuid` and `getgid` functions.
+
+
+`cc ls.c && ./a.out`
