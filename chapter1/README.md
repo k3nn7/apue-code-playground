@@ -51,3 +51,14 @@ Usage:
 
 `cc signals.c && ./a.out`
 
+All SIGINT (^C) signals will be catched. Press ^D to exit.
+
+### `shell.c`
+
+Bare-bones shell implementation. Example of `fork` and `exec` functions usage.
+
+Usage:
+
+`cc shell.c && ./a.out`
+
+Type any unix command to run it.
