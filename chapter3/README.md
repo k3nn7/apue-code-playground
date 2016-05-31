@@ -30,3 +30,15 @@ It also shows that offset is not associated with file descriptor but with file t
 Usage
 
 `cc dup.c && ./a.out out`
+
+### `fcntl.c`
+
+Uses `fcntl` command to get file descriptor file status flags.
+
+Usage
+
+`cc fcntl.c && ./a.out 2 2>>out`
+
+`cc fcntl.c && ./a.out 0`
+
+`cc fcntl.c && ./a.out 2 2>out`
