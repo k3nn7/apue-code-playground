@@ -13,3 +13,11 @@ Usage
 To analyse created file contents type:
 
 `od -c file.hole`
+
+### `pwrite.c`
+
+Example usage of `pwrite` which allows to perform `lseek` and `write` in single, atomic operation.
+
+Usage
+
+`cc pwrite.c && ./a.out out`
