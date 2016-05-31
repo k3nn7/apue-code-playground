@@ -21,3 +21,12 @@ Example usage of `pwrite` which allows to perform `lseek` and `write` in single,
 Usage
 
 `cc pwrite.c && ./a.out out`
+
+### `dup.c`
+
+Example of file descriptor duplication with `dup`.
+It also shows that offset is not associated with file descriptor but with file table entry;
+
+Usage
+
+`cc dup.c && ./a.out out`
