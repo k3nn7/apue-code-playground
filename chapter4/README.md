@@ -19,3 +19,21 @@ Example output:
 /var/run/syslog: socket
 /dev/stdin: symbolic link
 ```
+
+### `access.c`
+
+Uses `faccessat` function to display real user and effective user prermissions for file provided as an argument.
+
+Usage:
+
+`cc access.c && ./a.out ./a.out`
+
+Example output:
+```
++ Readable for real user id
++ Writable for real user id
++ Executable for real user id
++ Readable for effective user id
++ Writable for effective user id
++ Executable for effective user id
+```
