@@ -38,3 +38,7 @@ File /bin/bash:
 - Writable for effective user id
 + Executable for effective user id
 ```
+
+### `umask.c`
+
+Example that shows how different values passed to `umask` function affects permissions of files created by process
