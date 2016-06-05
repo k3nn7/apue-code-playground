@@ -26,14 +26,15 @@ Uses `faccessat` function to display real user and effective user prermissions f
 
 Usage:
 
-`cc access.c && ./a.out ./a.out`
+`cc access.c && ./a.out ./bin/bash`
 
 Example output:
 ```
+File /bin/bash:
 + Readable for real user id
-+ Writable for real user id
+- Writable for real user id
 + Executable for real user id
 + Readable for effective user id
-+ Writable for effective user id
+- Writable for effective user id
 + Executable for effective user id
 ```
