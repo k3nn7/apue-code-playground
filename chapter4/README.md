@@ -42,3 +42,13 @@ File /bin/bash:
 ### `umask.c`
 
 Example that shows how different values passed to `umask` function affects permissions of files created by process
+
+Usage:
+
+`cc umask.c`
+
+It creates 3 files with different umask set before:
+
+* `1foo` - with default umask (inherited from parent process)
+* `2foo` - with umask 0
+* `3foo` - with umask `S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH`
