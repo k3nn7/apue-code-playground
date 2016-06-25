@@ -17,4 +17,6 @@ int main(int argc, char ** argv)
         printf("Link error: %s\n", strerror(errno));
         return 1;
     }
+
+    return 0;
 }
