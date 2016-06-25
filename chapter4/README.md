@@ -59,3 +59,10 @@ It creates 3 files with different umask set before:
 * `1foo` - with default umask (inherited from parent process)
 * `2foo` - with umask 0
 * `3foo` - with umask `S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH`
+
+### `link.c`
+
+Creates symbolic link using `link` function.
+
+Usage:
+`cc link.c && ./a.out ./source ./destination`
