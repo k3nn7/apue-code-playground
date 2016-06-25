@@ -29,12 +29,13 @@ void printFileType(char * path)
     if (S_ISSOCK(buf.st_mode))
         typeStr = "socket";
 
-    printf("%s: %s\n", path, typeStr);
+
+    printf("File '%s':\n - Type: %s\n - Size: %ld bytes\n", path, typeStr, buf.st_size);
 }
 
 int main(int argc, char ** argv)
 {
-    for (int i = 0; i < argc; i++) {
+    for (int i = 1; i < argc; i++) {
         printFileType(argv[i]);
     }
     return 0;
