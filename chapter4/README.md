@@ -66,3 +66,10 @@ Creates symbolic link using `link` function.
 
 Usage:
 `cc link.c && ./a.out ./source ./destination`
+
+### `unlink.c`
+
+Example of `unlink` function. Demonstrates that unlinking file isn't equivalent to removing file data from disk.
+
+Usage:
+`cc unlink.c && ./a.out`
