@@ -73,3 +73,10 @@ Example of `unlink` function. Demonstrates that unlinking file isn't equivalent 
 
 Usage:
 `cc unlink.c && ./a.out`
+
+### `futimens.c`
+
+Uses `futimens` function to modify file access and modification times. Given file will be truncated but access and modification time will be left unchanged.
+
+Usage:
+`cc futimens.c && ./a.out <path>`
