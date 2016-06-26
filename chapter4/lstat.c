@@ -29,8 +29,11 @@ void printFileType(char * path)
     if (S_ISSOCK(buf.st_mode))
         typeStr = "socket";
 
-
-    printf("File '%s':\n - Type: %s\n - Size: %ld bytes\n", path, typeStr, buf.st_size);
+    printf("File %s:\n", path);
+    printf("- Type: %s\n", typeStr);
+    printf("- Size: %ld\n", buf.st_size);
+    printf("- Last access time: %ld s %ld ns\n", buf.st_atim.tv_sec, buf.st_atim.tv_nsec);
+    printf("- Last modification time: %ld s %ld ns\n", buf.st_mtim.tv_sec, buf.st_mtim.tv_nsec);
 }
 
 int main(int argc, char ** argv)

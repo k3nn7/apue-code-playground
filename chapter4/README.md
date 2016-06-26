@@ -13,18 +13,26 @@ Usage:
 
 Example output:
 ```
-File '/dev/tty':
- - Type: character device
- - Size: 0 bytes
-File '/dev/zero':
- - Type: character device
- - Size: 0 bytes
-File '/var/run/docker.sock':
- - Type: socket
- - Size: 0 bytes
-File '/dev/stdin':
- - Type: symbolic link
- - Size: 15 bytes
+File /dev/tty:
+- Type: character device
+- Size: 0
+- Last access time: 1466972664 s 480739478 ns
+- Last modification time: 1466971574 s 480739478 ns
+File /dev/zero:
+- Type: character device
+- Size: 0
+- Last access time: 1466971574 s 472739478 ns
+- Last modification time: 1466971574 s 472739478 ns
+File /var/run/docker.sock:
+- Type: socket
+- Size: 0
+- Last access time: 1466971586 s 220739494 ns
+- Last modification time: 1466971586 s 220739494 ns
+File /dev/stdin:
+- Type: symbolic link
+- Size: 15
+- Last access time: 1466971496 s 508000039 ns
+- Last modification time: 1466971496 s 508000039 ns
 ```
 
 ### `access.c`
