@@ -21,3 +21,11 @@ Files and Directories
 ## Chapter 5
 
 Standard I/O Library
+
+## Chapter 6
+
+System Data Files and Information
+
+## Chapter 7
+
+Process Environment
